@@ -38,7 +38,7 @@ stateDiagram-v2
 ## Run
 
 ```bash
-npm ci
+npm install
 npx hardhat test
 npx hardhat run scripts/deploy.js --network hardhat
 ```
