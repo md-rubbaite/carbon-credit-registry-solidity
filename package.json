@@ -1,0 +1,18 @@
+{
+  "name": "carbon-credit-registry-solidity",
+  "version": "1.0.0",
+  "description": "Reference ERC-1155 carbon-credit registry: verified issuance, transfer and on-chain retirement without double counting.",
+  "license": "MIT",
+  "author": "Rubbaite T. Hassain",
+  "private": true,
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "coverage": "hardhat coverage"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.1.2",
+    "@openzeppelin/contracts": "^5.6.1",
+    "hardhat": "^2.29.2"
+  }
+}
