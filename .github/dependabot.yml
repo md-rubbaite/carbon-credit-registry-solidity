@@ -1,4 +1,6 @@
 # Dependabot: weekly, grouped updates so dependency PRs arrive as one reviewable change.
+# Major Hardhat upgrades (v2 -> v3) change the plugin and config model, so they are
+# planned as a deliberate migration rather than an automatic bump.
 version: 2
 updates:
   - package-ecosystem: npm
@@ -9,6 +11,11 @@ updates:
     groups:
       npm-dependencies:
         patterns: ["*"]
+    ignore:
+      - dependency-name: "hardhat"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "@nomicfoundation/*"
+        update-types: ["version-update:semver-major"]
   - package-ecosystem: github-actions
     directory: /
     schedule:
